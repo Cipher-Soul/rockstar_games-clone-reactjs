@@ -12,7 +12,7 @@ export default function Header() {
             <span className='h-[2px] bg-white w-full block'></span>
         </button>
         <div className='flex '><img className=' h-[1.7] sm:h-[1.9rem]' src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c46845952588bf44125a37117d4da32c.svg" alt="" srcset="" /></div>
-        <div><img className='h-[30px]' src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a29e26aa160e7be7e845708c335b3c39.svg" alt="" srcset="" /></div>
+        <div className='sm:hidden'><img className='h-[30px]' src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a29e26aa160e7be7e845708c335b3c39.svg" alt="" srcset="" /></div>
         {/* mobile wiew end */}
         <div className=' ms-36 hidden sm:block'>
             <ul className='flex gap-8 justify-end capitalize font-medium'>
