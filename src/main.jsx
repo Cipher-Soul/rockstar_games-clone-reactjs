@@ -13,11 +13,15 @@ import Header from './components/header.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Header/>,
+    element: <App/>,
   },
   {
     path:'about/',
     element:<div>About us</div>,
+  }
+  ,{
+    path:'*',
+    element:<div className='text-red-500 font-extrabold text-3xl'>404 page not found</div>
   }
 ]);
 

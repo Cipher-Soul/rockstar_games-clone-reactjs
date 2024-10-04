@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    :root{
+        --rockstar-gold: #fcaf17;
+        --white-65: hsla(0,0%,100%,.65);
+        --background-darklight:#0b0b0b;
+    }
+    body{
+        font-family: helvetica;
+        color:white;
+    }
+}
