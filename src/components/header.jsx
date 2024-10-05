@@ -39,7 +39,7 @@ export default function Header() {
             </ul>
         </div>
         <div className=' hidden sm:flex  items-center gap-7 '>
-            <a href='#' className='bg-[#fcaf17] text-black font-bold rounded py-1 px-3 pt-[5px] uppercase tracking-[-1px]'>get launcher</a>
+            <a href='#' className='bg-[var(--rockstar-gold)] text-black font-bold rounded py-1 px-3 pt-[5px] uppercase tracking-[-1px]'>get launcher</a>
             <div onClick={search}><img className='h-[25px] cursor-pointer ' src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/902006563577748c7d58ac9c2bf5e6df.svg" alt=""  /></div>
             <div><img className='h-[30px] cursor-pointer' src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a29e26aa160e7be7e845708c335b3c39.svg" alt=""  /></div>
         </div>
@@ -55,28 +55,31 @@ function Games(prop) {
   return (
     <>
     <div className={`hidden absolute w-full features-games sm:flex items-center  bg-[var(--background-darklight)] border border-gray-900 overflow-y-hidden transform transition-all duration-300  ${prop.isopen? ' h-[64vh]  ':' h-0  '} `}>
-        <FeaturedGames/>
+    <div className=' w-full mx-20'>
+            <div className='flex justify-between py-3'>
+                <h1 className='text-3xl font-bold'>Featured Games</h1>
+                <Link to={'about/'} className='text-xl uppercase font-bold group'>View all <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e5fca59d373ed4d2aa00584b688c3da3.svg" className='inline group-hover:translate-x-2 transition-all ease-in-out '/></Link>
+            </div>
+            <div className="cards flex gap-5">
+               <FeaturedGames/>
+               <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dbc01cf29aa31b9d15a5d06483a0a1a3.jpg')] bg-cover"></div>
+        </div>
+        </div>
     </div>
     </>
   )
 }
 
 //ye feutured games cards ---------------------------------------------------------------------
-function FeaturedGames(){
+export function FeaturedGames(){
     return(
-        <div className=' w-full mx-20'>
-            <div className='flex justify-between py-3'>
-                <h1 className='text-3xl font-bold'>Featured Games</h1>
-                <Link to={'about/'} className='text-xl uppercase font-bold group'>View all <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e5fca59d373ed4d2aa00584b688c3da3.svg" className='inline group-hover:translate-x-2 transition-all ease-in-out '/></Link>
-            </div>
-            <div className="cards flex gap-5">
+        <>
+            
                 <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ccac790d960f612fa0746c78b8052926.jpg')] bg-cover"></div>
                 <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5dc0952c9e5beba577aeffe0289478bd.jpg')] bg-cover"></div>
                 <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/214a1cd1a2e7bb8f9b1e5d3846ca2993.jpg')] bg-cover"></div>
-                <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/082b847bcab37655faf903149f80f1e4.jpg')] bg-cover"></div>
-                <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dbc01cf29aa31b9d15a5d06483a0a1a3.jpg')] bg-cover"></div>
-            </div>
-        </div>
+                <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/082b847bcab37655faf903149f80f1e4.jpg')] bg-cover"></div>          
+                </>
     )
 }
 //Search Bar toogle -------------------------------------------------------------------------------------------------

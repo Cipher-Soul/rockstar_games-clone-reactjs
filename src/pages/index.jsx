@@ -1,9 +1,27 @@
 import React,{ useState } from 'react'
+import Newsfire from '../components/newsfire'
+import { FeaturedGames } from '../components/header'
+import Viewmore from '../components/viewmore'
+import Footer from '../components/footer'
 
 export default function Index() {
   return (
     <>
     <Carousel/>
+    <Newsfire/>
+    <section className='min-h-screen w-full bg-[var(--background-darklight)] sm:px-[100px] sm:py-[50px]'>
+        <div className="banner max-sm:h-40 sm:h-[412px] w-full rounded-lg  overflow-hidden mb-8 bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f1aba112359a3d6747ad694a8c02a07c.png')] sm:bg-cover max-sm:bg-cover">
+           
+        </div>
+        <div className='max-sm:grid max-sm:grid-cols-2 gap-3 sm:flex sm:justify-between'>
+        <FeaturedGames/>
+        </div>
+        <Viewmore/>
+    
+    </section>
+    <Footer/>
+    
+
     </>
     
   )
@@ -40,7 +58,7 @@ function Carousel(){
 
     return (
         <>
-            <div className='min-h-[68vh] sm:h-[78vh]  bg-black w-full  sm:flex '>
+            <section className='min-h-[68vh] sm:h-[78vh]  bg-black w-full  sm:flex '>
                 <div className="w-full sm:w-[70%]">
                     <img src={gamesLst[idxCrousel].source} className='object-cover transition-all' />
                 </div>
@@ -61,11 +79,11 @@ function Carousel(){
                         </div>
                     
                 </div>
-            </div>
+            </section>
         </>
     )
 }
-
+//Watch now button
 function Watch_now(){
     return (
         <>
