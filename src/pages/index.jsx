@@ -2,11 +2,13 @@ import React,{ useState } from 'react'
 import Newsfire from '../components/newsfire'
 import { FeaturedGames } from '../components/header'
 import Viewmore from '../components/viewmore'
+import Header from '../components/header'
 import Footer from '../components/footer'
 
 export default function Index() {
   return (
     <>
+    <Header/>
     <Carousel/>
     <Newsfire/>
     <section className='min-h-screen w-full bg-[var(--background-darklight)] sm:px-[100px] sm:py-[50px]'>
@@ -20,8 +22,6 @@ export default function Index() {
     
     </section>
     <Footer/>
-    
-
     </>
     
   )

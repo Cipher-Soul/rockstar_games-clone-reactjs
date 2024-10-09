@@ -1,23 +1,22 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
-import Header from './components/header.jsx';
+import Index from './pages/index.jsx';
+import NewsFire from './pages/NewsFire.jsx';
 
 // main routes url
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <Index/>,
   },
   {
-    path:'about/',
-    element:<div>About us</div>,
+    path:'newsfire/',
+    element:<NewsFire/>,
   }
   ,{
     path:'*',

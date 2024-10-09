@@ -31,7 +31,7 @@ export default function Header() {
         <div className='h-full ms-36 hidden sm:block'>
             <ul className='flex   h-full  justify-end  capitalize font-medium'>
                 <li className='px-4 py-6 transition-all border-0 hover:border-b-[3px] hover:border-white ' onClick={gamesToogle}>Games<img className={`float-right h-[20px] mt-1 ${isgamesOpen?'rotate-180':' '}`} src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg" alt=""></img></li>
-                <li className='px-4 py-6 transition-all border-0 hover:border-b-[3px] hover:border-white '><Link to={'/'}>Newswire</Link></li>
+                <li className='px-4 py-6 transition-all border-0 hover:border-b-[3px] hover:border-white '><Link to={'/newsfire/'}>Newswire</Link></li>
                 <li className='px-4 py-6 transition-all border-0 hover:border-b-[3px] hover:border-white '><Link>Video</Link></li>
                 <li className='px-4 py-6 transition-all border-0 hover:border-b-[3px] hover:border-white '><Link>Downloads</Link></li>
                 <li className='px-4 py-6 transition-all border-0 hover:border-b-[3px] hover:border-white '><a href="https://store.rockstargames.com/?_gl=1*1bk95xp*_ga*MTM4NTk0NTAxMC4xNzI3OTcyNTI0*_ga_PJQ2JYZDQC*MTcyNzk3MjUyNC4xLjEuMTcyNzk3NTEwOC4wLjAuMA.." target="_blank" >Store <img className='inline h-[15px] m-1' src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9db08c7809308ca2fa4614f3c2d45a91.svg"/></a></li>
