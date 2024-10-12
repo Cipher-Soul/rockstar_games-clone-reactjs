@@ -18,7 +18,7 @@ export default function Header() {
     
   return (
     <>
-    <nav className='px-8 h-[80px] relative bg-black flex justify-between sm:justify-between items-center sm:px-20 text-white '>
+    <nav className='px-8 h-[80px] relative bg-black flex justify-between sm:justify-between items-center sm:px-20 text-white  overflow-x-hidden'>
         {/* on mobile */}
         <button className='h-[25px] w-[25px] sm:hidden flex flex-col justify-around'>
             <span className='h-[2px] bg-white w-full block'></span>
@@ -75,10 +75,10 @@ export function FeaturedGames(){
     return(
         <>
             
-                <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ccac790d960f612fa0746c78b8052926.jpg')] bg-cover"></div>
-                <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5dc0952c9e5beba577aeffe0289478bd.jpg')] bg-cover"></div>
-                <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/214a1cd1a2e7bb8f9b1e5d3846ca2993.jpg')] bg-cover"></div>
-                <div className="card border border-gray-700 h-[317px] hover:scale-[1.05] transition-all duration-300 w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/082b847bcab37655faf903149f80f1e4.jpg')] bg-cover"></div>          
+                <div className="card border border-gray-700 max-sm:max-h-[250px] h-[300px] hover:scale-[1.05] transition-all duration-300 sm:w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ccac790d960f612fa0746c78b8052926.jpg')] bg-cover"></div>
+                <div className="card border border-gray-700 max-sm:max-h-[250px] h-[300px] hover:scale-[1.05] transition-all duration-300 sm:w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5dc0952c9e5beba577aeffe0289478bd.jpg')] bg-cover"></div>
+                <div className="card border border-gray-700 max-sm:max-h-[250px] h-[300px] hover:scale-[1.05] transition-all duration-300 sm:w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/214a1cd1a2e7bb8f9b1e5d3846ca2993.jpg')] bg-cover"></div>
+                <div className="card border border-gray-700 max-sm:max-h-[250px] h-[300px] hover:scale-[1.05] transition-all duration-300 sm:w-[257px]  rounded-lg bg-[url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/082b847bcab37655faf903149f80f1e4.jpg')] bg-cover"></div>          
                 </>
     )
 }
